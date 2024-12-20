@@ -39,13 +39,6 @@ test = [
     "codecov",
     "pre-commit",
 ]
-doc = [
-    "mkdocs",
-    "mkdocstrings",
-    "mkdocstrings[python]",
-    "mkdocs-material",
-    "Pygments",
-]
 dev = [
     "black",
     "isort",
