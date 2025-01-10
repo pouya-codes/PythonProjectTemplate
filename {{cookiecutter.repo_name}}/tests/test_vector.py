@@ -2,7 +2,7 @@
 from typing import Any
 
 import pytest
-from fastvector.vector import Vector2D
+from {{cookiecutter.package_name}}.vector import Vector2D
 
 
 V1 = Vector2D(0, 0)
