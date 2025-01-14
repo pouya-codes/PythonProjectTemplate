@@ -6,9 +6,9 @@ requires = [
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "fastvector"
+name = "{{cookiecutter.package_name}}"
 authors = [
-    {name = "Jan Schaffranek", email = "email@email.com"},
+    {name = "{{cookiecutter.your_name}}", email = "{{cookiecutter.email}}"},
 ]
 description = "This is a simple vector python package."
 readme = "README.md"
@@ -46,14 +46,14 @@ dev = [
     "pre-commit",
     "ruff",
 ]
-all = ["fastvector[test,doc,dev]"]
+all = ["{{cookiecutter.package_name}}[test,doc,dev]"]
 
 [tool.setuptools]
 platforms = ["unix", "linux", "osx", "cygwin", "win32"]
-packages = ["fastvector"]  # optional
+packages = ["{{cookiecutter.package_name}}"]  # optional
 
 [tool.setuptools.dynamic]
-version = {attr = "fastvector.__version__"}
+version = {attr = "{{cookiecutter.package_name}}.__version__"}
 
 [tool.pytest.ini_options]
 minversion = "7.3"
@@ -64,8 +64,8 @@ branch = true
 parallel = true
 omit = [
     "setup.py",
-    "fastvector/__init__.py",
-    "fastvector/version.py",
+    "{{cookiecutter.package_name}}/__init__.py",
+    "{{cookiecutter.package_name}}/version.py",
 ]
 
 [tool.coverage.report]
@@ -82,7 +82,7 @@ exclude_lines = [
 
 [tool.coverage.paths]
 source = [
-    "fastvector/*",
+    "{{cookiecutter.package_name}}/*",
 ]
 
 [tool.coverage.html]
