@@ -63,7 +63,7 @@ testpaths = "tests"
 branch = true
 parallel = true
 omit = [
-    "setup.py",
+    "main.py",
     "{{cookiecutter.package_name}}/__init__.py",
     "{{cookiecutter.package_name}}/version.py",
 ]
@@ -97,7 +97,6 @@ skip-magic-trailing-comma = false
 force-exclude = '''
 /(
   | docs
-  | setup.py
 )/
 '''
 
@@ -146,8 +145,7 @@ split_on_trailing_comma = true
 lines_after_imports = 2
 force_single_line = true
 skip_glob = [
-  "docs/*",
-  "setup.py"
+  "docs/*"
 ]
 filter_files = true
 

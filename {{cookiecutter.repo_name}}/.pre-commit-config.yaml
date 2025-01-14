@@ -39,7 +39,7 @@ repos:
     hooks:
     -   id: run-pytest
         name: Run Pytest
-        entry: pytest --cov={{cookiecutter.package_name}} tests --cov-report=html --cov-report term-missing
+        entry: pytest --cov={{cookiecutter.package_name}} tests --cov-report=html -cov-fail-under=70 --cov-report term-missing
         language: system
         types: [python]
         pass_filenames: false
