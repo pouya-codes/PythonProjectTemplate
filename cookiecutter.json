@@ -1,6 +1,6 @@
 {
     "repo_name": "repo_name",
     "package_name": "package_name",
-    "cookiecutter.your_name": "Pouya Ahmadvand",
-    "cookiecutter.email": "email@email.com"
+    "your_name": "Pouya Ahmadvand",
+    "email": "email@email.com"
 }
