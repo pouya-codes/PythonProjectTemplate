@@ -20,6 +20,7 @@ function generate-project {
     git add --all
     git branch -M main
     git commit -m "Initial commit"
+    git checkout -b feature/dev
     cd ../..
     find . -mindepth 1 -maxdepth 1 ! -name 'src' -exec rm -rf {} +
     mv src/$REPO_NAME .
