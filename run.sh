@@ -7,6 +7,8 @@ THIS_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 function install {
     python -m pip install --upgrade pip
     python -m pip install cookiecutter
+    python -m pip install pre-commit
+    python -m pip install pytest-cov
 }
 
 function generate-project {
