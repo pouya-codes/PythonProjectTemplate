@@ -20,8 +20,8 @@ function generate-project {
     cd $REPO_NAME
     git init
     git add --all
-    git branch -M main
     git commit -m "Initial commit"
+    git branch -M main
     git checkout -b feature/dev
     cd ../..
     find . -mindepth 1 -maxdepth 1 ! -name 'src' -exec rm -rf {} +
